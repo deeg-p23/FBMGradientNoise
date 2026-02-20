@@ -54,7 +54,7 @@ Once again, the procedure is slightly altered under other dimensions, having (N+
 Now, the noise has a bit more contrast between whitened and darkened spots, and the orientation of the gradients are skewed a little bit compared to Perlin Noise. Since Simplex Noise has a completely separate process, I added a property to switch between the two modes when generating noise.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/d44c05d1-cfbc-489a-8749-942e267696c7" alt="GradientNoise3">
+  <img src="https://github.com/user-attachments/assets/d44c05d1-cfbc-489a-8749-942e267696c7" alt="GradientNoise3" width="49%">
 </p>
 
 ## Fractional Brownian Motion
@@ -73,7 +73,9 @@ So for every layer, the evaluated noise now takes UV * frequency as the fragment
 
 The final step was of course some color. I modified a [palette interpolation function](https://www.shadertoy.com/view/ll2GD3) created by Inigo Quilez to alter the resulting fragment color based on four palette vectors, and the resulting FBM noise as the interpolation factor, t. Using Perlin Noise, a mix of the FBM properties shown in the previous two figures, and some vibrant heat-like palette vectors, I ended the project with this visual.
 
-[]
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/07d2d1ed-109a-45b0-ba25-5f5641aeba3a" alt="GradientNoise6" width="75%">
+</p>
 
 The journey getting here was very refreshing. Where I hoped to create a more stylistically inspired shader with this project, I instead learned incredibly new things about the world of procedural generation, all while improving shader writing skills. I’m hoping to continue working with stylized noise, likely with 3D objects next. 
 
